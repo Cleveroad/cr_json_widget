@@ -1,0 +1,15 @@
+name: cr_json_widget
+description: A widget, that visualises a tree structure, where a node can be any widget.
+version: 0.9.0
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

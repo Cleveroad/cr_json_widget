@@ -2,17 +2,20 @@
 
 This widget visualises a tree structure, where a node can be any widget.
 
+## Examples
+<img src="https://raw.githubusercontent.com/Cleveroad/cr_json_widget/master/screenshots/screenshot-1.jpg" height="500">  <img src="https://raw.githubusercontent.com/Cleveroad/cr_json_widget/master/screenshots/screenshot-2.jpg" height="500">
+
 ## Getting Started
 
 1. Add plugin to your project:
     ```yaml
     dependencies:
-        cr_json_widget: ^0.9.0
+        cr_json_widget: ^0.9.1
     ```
 
 ## Usage
 1. Create JsonController:
-    ```
+    ```dart
     final _jsonController = JsonController(
         allNodesExpanded: false,
         uncovered: 3,
@@ -23,7 +26,7 @@ This widget visualises a tree structure, where a node can be any widget.
    `uncovered` - Sets the value to what nesting by default the json tree will be expanded
 2. Add widget:
    2.1 Accepts json as Map <String, Any> and builds the tree automatically:
-    ```
+    ```dart
         ...
         final data = <String, dynamic>{
             'integer': 1, 
@@ -37,7 +40,7 @@ This widget visualises a tree structure, where a node can be any widget.
         ...
     ```
    2.2 Accepts your custom List <JsonNode>, for placement in the form of a tree:
-    ```
+    ```dart
         CrJsonWidget(
             ..
         jsonNodes: [
@@ -79,7 +82,7 @@ This widget visualises a tree structure, where a node can be any widget.
         ),
     ```
 Full implementation example:
-```
+```dart
     ...
     CrJsonWidget(
         iconOpened: Icon(
@@ -144,7 +147,3 @@ Full implementation example:
 `jsonNodes` - List of root level json nodes
 
 `jsonController` - Json controller to manage the json state
-
-## Examples
-<img src="./screenshots/screenshot-1.jpg" height="500">  <img src="./screenshots/screenshot-2.jpg" height="500">
-

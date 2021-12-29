@@ -1,6 +1,7 @@
 name: cr_json_widget
 description: A widget, that visualises a tree structure, where a node can be any widget.
-version: 0.9.0
+version: 0.9.1
+homepage: https://github.com/Cleveroad/cr_json_widget
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

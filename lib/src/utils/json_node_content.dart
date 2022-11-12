@@ -1,5 +1,5 @@
+import 'package:cr_json_widget/res/cr_json_color.dart';
 import 'package:cr_json_widget/src/utils/copy_clipboard.dart';
-import 'package:cr_json_widget/src/utils/json_tree_colors.dart';
 import 'package:cr_json_widget/src/utils/json_utils.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +40,7 @@ class JsonNodeContent extends StatelessWidget {
             TextSpan(
               text: keyValue,
               style: const TextStyle(
-                color: jsonTreeColor,
+                color: CrJsonColors.jsonTreeColor,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -59,15 +59,15 @@ class JsonNodeContent extends StatelessWidget {
 
   Color _getTypeColor(Object? content) {
     if (content is int) {
-      return intColor;
+      return CrJsonColors.intColor;
     } else if (content is String) {
-      return stringColor;
+      return CrJsonColors.stringColor;
     } else if (content is bool) {
-      return boolColor;
+      return CrJsonColors.boolColor;
     } else if (content is double) {
-      return doubleColor;
+      return CrJsonColors.doubleColor;
     } else {
-      return nullColor;
+      return CrJsonColors.nullColor;
     }
   }
 

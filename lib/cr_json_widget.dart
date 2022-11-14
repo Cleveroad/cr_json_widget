@@ -4,6 +4,6 @@
 // license that can be found in the LICENSE file or at
 // https://developers.google.com/open-source/licenses/bsd
 
+export 'src/controllers/json_controller.dart';
 export 'src/cr_json_widget.dart';
-export 'src/primitives/json_controller.dart';
-export 'src/primitives/json_node.dart';
+export 'src/models/json_node.dart';

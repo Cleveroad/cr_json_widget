@@ -1,0 +1,1 @@
+const kHidden = 'Hidden';

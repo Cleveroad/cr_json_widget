@@ -4,11 +4,11 @@
 // license that can be found in the LICENSE file or at
 // https://developers.google.com/open-source/licenses/bsd
 
-import 'package:cr_json_widget/src/builder.dart';
-import 'package:cr_json_widget/src/copy_json_nodes.dart';
-import 'package:cr_json_widget/src/primitives/json_controller.dart';
-import 'package:cr_json_widget/src/primitives/json_node.dart';
+import 'package:cr_json_widget/src/controllers/json_controller.dart';
+import 'package:cr_json_widget/src/models/json_node.dart';
+import 'package:cr_json_widget/src/utils/copy_json_nodes.dart';
 import 'package:cr_json_widget/src/utils/json_node_content.dart';
+import 'package:cr_json_widget/src/widgets/json_nodes_widget.dart';
 import 'package:flutter/material.dart';
 
 /// Json view with collapsible and expandable nodes.

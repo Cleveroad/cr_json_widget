@@ -4,7 +4,6 @@
 *.pyc
 *.swp
 *.ipa
-*.lock
 *.zip
 .DS_Store
 .atom/
@@ -24,7 +23,6 @@
 #.vscode/
 
 .gradle
-.metadata
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -34,7 +32,6 @@
 .packages
 .pub-cache/
 .pub/
-.lock/
 /build/
 
 # Android related

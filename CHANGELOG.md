@@ -1,3 +1,6 @@
+## 1.1.0
+* Added **rootExpanded parameter** to automatically expand the root nesting of JSON in CrJsonRecyclerWidget and CrJsonRecyclerSliver
+
 ## 1.0.0
 
 * Added new widget: **CrJsonRecyclerWidget**

@@ -11,7 +11,7 @@ This widget visualises a tree structure, where a node can be any widget.
 1. Add plugin to your project:
     ```yaml
     dependencies:
-        cr_json_widget: ^1.0.0
+        cr_json_widget: ^1.1.0
     ```
 
 ## Usage
@@ -147,6 +147,8 @@ Full implementation example:
 
 `indentHeight` - Vertical indent between levels
 
+`indentWidth` - Horizontal indent between levels
+
 `indentLeftEndJsonNode` - The starting position of the ending node ***(Recommended size is the size
 of the icon)***
 
@@ -193,9 +195,11 @@ or not
 
 `iconOpened` - Custom icon for opening a node
 
-`iconClosed` - Custom icon for сlosing a node
+`iconClosed` - Custom icon for closing a node
 
-`fontWeight` - Set font weignt of text. By default FontWeight.bold
+`fontStyle` - Set font style of text. By default, the inherited style used
+
+`fontWeight` - Set font weight of text. By default FontWeight.bold
 
 `horizontalSpaceMultiplier`- The distance by which the left child element will be offset from the
 parent
@@ -229,6 +233,8 @@ error
 
 `jsonController` - Json controller to manage the json state
 
+`rootExpanded` - Whether to expand the root nesting by default
+
 Full implementation example:
 
 ```dart
@@ -237,6 +243,7 @@ Full implementation example:
           child: CrJsonRecyclerWidget(
             json: json,
             jsonController: _jsonController,
+            rootExpanded: true,
           ),
         ),
       ...
@@ -260,6 +267,8 @@ Full implementation example:
 
 `jsonController` - Json controller to manage the json state
 
+`rootExpanded` - Whether to expand the root nesting by default
+
 Full implementation example:
 
 ```dart
@@ -269,6 +278,7 @@ Full implementation example:
                     CrJsonRecyclerSliver(
                           jsonController: _jsonController,
                           json: json,
+                          rootExpanded: true,
                     ),
               ],
           ),

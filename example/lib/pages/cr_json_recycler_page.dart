@@ -76,6 +76,7 @@ class _CrJsonRecyclerPageState extends State<CrJsonRecyclerPage> {
                 CrJsonRecyclerSliver(
                   jsonController: _jsonController1,
                   json: json,
+                  rootExpanded: true,
                 ),
               ],
             ),

@@ -8,10 +8,12 @@ class CrJsonRecyclerSliver extends StatefulWidget {
     required this.jsonController,
     required this.json,
     Key? key,
+    this.rootExpanded = false,
   }) : super(key: key);
 
   final JsonRecyclerController jsonController;
   final dynamic json;
+  final bool rootExpanded;
 
   @override
   State<CrJsonRecyclerSliver> createState() => _CrJsonRecyclerSliverState();
@@ -24,6 +26,9 @@ class _CrJsonRecyclerSliverState
 
   @override
   late JsonRecyclerController jsonController = widget.jsonController;
+
+  @override
+  bool get rootExpanded => widget.rootExpanded;
 
   @override
   Widget bodyWidget(BuildContext context) {

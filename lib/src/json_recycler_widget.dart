@@ -8,10 +8,12 @@ class CrJsonRecyclerWidget extends StatefulWidget {
     required this.jsonController,
     required this.json,
     Key? key,
+    this.rootExpanded = false,
   }) : super(key: key);
 
   final JsonRecyclerController jsonController;
   final dynamic json;
+  final bool rootExpanded;
 
   @override
   State<CrJsonRecyclerWidget> createState() => _CrJsonRecyclerWidgetState();
@@ -21,6 +23,9 @@ class _CrJsonRecyclerWidgetState
     extends BaseRecyclerPageState<CrJsonRecyclerWidget> {
   @override
   late dynamic json = widget.json;
+
+  @override
+  bool get rootExpanded => widget.rootExpanded;
 
   @override
   late JsonRecyclerController jsonController = widget.jsonController;

@@ -19,6 +19,8 @@ abstract class BaseRecyclerPageState<T extends StatefulWidget> extends State<T>
   bool _isExpanded = false;
   CurrentParentIndex? _currentParentIndex;
 
+  bool get rootExpanded => false;
+
   @override
   void initState() {
     super.initState();
@@ -33,6 +35,10 @@ abstract class BaseRecyclerPageState<T extends StatefulWidget> extends State<T>
 
     if (!_isExpanded) {
       _closeJson();
+    }
+
+    if (rootExpanded) {
+      _currentParentIndex = CurrentParentIndex(0, 0);
     }
   }
 

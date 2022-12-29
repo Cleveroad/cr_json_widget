@@ -4,6 +4,7 @@
 *.pyc
 *.swp
 *.ipa
+*.lock
 *.zip
 .DS_Store
 .atom/
@@ -32,6 +33,7 @@
 .packages
 .pub-cache/
 .pub/
+.lock/
 /build/
 
 # Android related

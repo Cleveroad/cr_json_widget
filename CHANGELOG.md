@@ -1,3 +1,6 @@
+## 1.1.1
+* Support for Flutter 3.7
+
 ## 1.1.0
 * Added **rootExpanded parameter** to automatically expand the root nesting of JSON in CrJsonRecyclerWidget and CrJsonRecyclerSliver
 
